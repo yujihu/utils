@@ -7,13 +7,19 @@
  * @param {String} $border-style 指定边框样式 <2.0.0>
  * @param {String} $radius 指定边框圆角半径，默认值：null <2.0.0>
  */
- @mixin border(
+@mixin border(
   $border-width: 1px,
   $border-color: #dadada,
   $border-style: solid,
   $radius: null
 ) {
-  @include border-common($border-width, $border-color, $border-style, all, $radius)
+  @include border-common(
+    $border-width,
+    $border-color,
+    $border-style,
+    all,
+    $radius
+  );
 }
 
 @mixin border-top(
@@ -22,7 +28,7 @@
   $border-style: solid,
   $radius: null
 ) {
-  @include border-common($border-width, $border-color, $border-style, top)
+  @include border-common($border-width, $border-color, $border-style, top);
 }
 
 @mixin border-bottom(
@@ -31,7 +37,7 @@
   $border-style: solid,
   $radius: null
 ) {
-  @include border-common($border-width, $border-color, $border-style, bottom)
+  @include border-common($border-width, $border-color, $border-style, bottom);
 }
 
 @mixin border-right(
@@ -40,7 +46,7 @@
   $border-style: solid,
   $radius: null
 ) {
-  @include border-common($border-width, $border-color, $border-style, right)
+  @include border-common($border-width, $border-color, $border-style, right);
 }
 
 @mixin border-left(
@@ -49,7 +55,7 @@
   $border-style: solid,
   $radius: null
 ) {
-  @include border-common($border-width, $border-color, $border-style, left)
+  @include border-common($border-width, $border-color, $border-style, left);
 }
 
 @mixin border-common(
